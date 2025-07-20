@@ -41,7 +41,7 @@ public class Task6 {
         String num2 = sc.nextLine(); // get input from user
 
         // here the method call return the sum of the two sumbers in string format
-        System.out.println(sumOfTwoNumbers("0", "0"));
+        System.out.println(sumOfTwoNumbers(num1,num2));
     }
 
     // this method will calculates the sum and store into the StringBuilder
@@ -54,9 +54,8 @@ public class Task6 {
             int num1 = i>=0 ? s.charAt(i--)-'0' : 0;
             int num2 = j>=0 ? t.charAt(j--)-'0' : 0;
             int sum = num1 + num2 + carry;
-            int val = sum%10;
+            res.append(sum%10);        
             carry = sum/10;
-            res.append(val);
         }
         return res.reverse().toString();
     }

@@ -23,14 +23,16 @@ public class Task1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a binary number 1 : ");
-        String a = sc.nextLine();
+        String a = sc.nextLine(); // get input from the user
 
         System.out.print("Enter a binary number 2 : ");
-        String b = sc.nextLine();
+        String b = sc.nextLine(); // get input from the user
 
-        System.out.println("The binary sum is : "+binarySum(a, b));
+        System.out.println("The binary sum is : "+binarySum(a, b)); // result
 
     }
+
+    // this method will calculates the binary sum
     public static String binarySum(String a, String b){
         StringBuilder res = new StringBuilder();
         int carry =0;

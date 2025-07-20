@@ -31,7 +31,7 @@ public class Task4 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the String 1 : ");
-        String s = sc.nextLine(); // get input from the user 
+        String s = sc.nextLine(); // get input from the user // get input from the user 
 
         System.out.print("Enter the String 2 : ");
         String t = sc.nextLine(); // get input from the user 

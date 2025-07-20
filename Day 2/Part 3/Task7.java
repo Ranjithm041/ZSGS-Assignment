@@ -34,11 +34,21 @@ public class Task7 {
     }
 
     // this method will calculates the space count
-    public static int getNumberOfSegments(String s){
-        int count=1;
-        for(int i=0;i<s.length();i++){
-            if(s.charAt(i)==' ') count++;
+    public static int getNumberOfSegments(String s) {
+    int count = 0;
+    boolean inSegment = false;
+
+    for (int i = 0; i < s.length(); i++) {
+        if (s.charAt(i) != ' ') {
+            if (!inSegment) {
+                count++;
+                inSegment = true;
+            }
+        } else {
+            inSegment = false;
         }
-        return count;
     }
+
+    return count;
+}
 }
