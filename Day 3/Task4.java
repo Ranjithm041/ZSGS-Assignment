@@ -9,9 +9,9 @@
 
 public class Task4 {
     public static void main(String[] args) {
-        Vehicle car = new Vehicle(101, "Rolls Royse", 72323456.56f);
-        Vehicle bike = new Vehicle(102, "R15 v4", 223456.893f);
-        Vehicle van = new Vehicle(103, "Mahindra", 323456.363f);
+        Vehicle rollsRoyce = new Vehicle(101, "Rolls-Royce Phantom", 72323456.56f);
+        Vehicle yamaha = new Vehicle(102, "Yamaha R15 V4", 223456.89f);
+        Vehicle mahindra = new Vehicle(103, "Mahindra Bolero", 323456.36f);
 
         System.out.println(Vehicle.count); // this will print the number of object creation
     }

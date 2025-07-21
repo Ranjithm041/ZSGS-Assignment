@@ -15,17 +15,26 @@ public class Task7 {
         int percent = sc.nextInt();
 
         System.out.println("Using if-else : ");
+        ifStatement(percent);
+
+        System.out.println("Using switch case : ");
+        switchStatement(percent);
+    }
+
+    // using if statement
+    public static void ifStatement(int percent){
         // here i used if else condition statement
         if(percent>=85 && percent<=100) System.out.println("Grade A");
         else if(percent>=70)  System.out.println("Grade B");
         else if(percent>=50)  System.out.println("Grade C");
         else  System.out.println("Fail");
+    }
 
-        // here i used switch statement
-        System.out.println("Using switch case : ");
+    // using swtch statement
+    public static void switchStatement(int percent){
         int val = percent/10;
         int rem = percent%10;
-        val = (val==8 && rem<5 )? 7 : 8;
+        val = (val==8 && rem<5 )? 7 : val;
         switch(val){
             case 10:
             case  9:

@@ -6,14 +6,13 @@
  * 
  */
 
-import java.util.Scanner;
-
 public class Task1 {
     public static void main(String[] args) {
-        Student student = new Student("John", 2);   
+        Student student = new Student("John", 2);   // assigned the roll no and name
     }
 }
 
+// here i declared the Student class 
 class Student{
     String name;
     int roll_no;

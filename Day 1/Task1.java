@@ -1,10 +1,10 @@
 
 // 1. Write a code to illustrate the various scope of variables(static, local, instance, block, final variables)?
 
-public class Scope {
+public class Task1 {
     // static block
     static{
-        System.out.println("This is the variuos scope of the varible ");
+        System.out.println("This is the various scope of the varible ");
     }
     public static void main(String[] args) {
         Employee emp1 = new Employee("Ranjith", 104, 40000, "Software Developer");

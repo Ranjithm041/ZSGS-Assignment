@@ -6,7 +6,7 @@
 
 */ 
 
-public class Employee_Task{
+public class Task9{
    public static void main(String[] args) {
        Employee employee = new Employee("Ranjith",104,"Software Developer",40000);
        employee.printDetails();

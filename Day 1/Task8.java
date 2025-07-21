@@ -1,13 +1,16 @@
 // 8. Write a program to find the first set bit of a number?
 
 import java.util.Scanner;
-public class SetBit {
+public class Task8 {
     static int count=0;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
         System.out.println("Enter a number : ");
         int val = sc.nextInt();
-        System.out.println(setBit(val));
+        
+        System.out.println(setBit(val));  
+
         System.out.println(recursion(val));
     }
     // here i used recursion to find setbit position

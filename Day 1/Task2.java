@@ -1,10 +1,10 @@
 // 2. Write a program in which, declare all data types like integer, double, float, long integer,
 // character and byte data and print them.
 
-public class DataType {
+public class Task2 {
     public static void main(String[] args) {
         Employee employee = new Employee("Ranjith", 104, 'M',(byte) 22, 40000, (float) 3.4,1234567890);
-        employee.printDetails();
+        employee.printDetails(); // this method will print the employee details
     }
 }
 class Employee{

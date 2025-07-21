@@ -35,34 +35,80 @@ Also Check how many .class files are generated.
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Task5 {
     public static void main(String[] args) {
         // created the store object for class Store
+        Scanner sc = new Scanner(System.in);
         Store store = new Store();
+        int choice=0;
 
-        // here i set the store details
-        store.setStoreDetails("Ranjith store", "Mathalamparai");
-        
+        do {
+            System.out.println("========= Inventory Menu =========");
+            System.out.println("1. Set Store Details");
+            System.out.println("2. Add Product");
+            System.out.println("3. Display Store Details");
+            System.out.println("4. Display All Products");
+            System.out.println("0. Exit");
 
-        // here i created the multiple products
-        Product note = new Product(101, "note", 45, 2);
-        Product pen = new Product(102, "pen", 10, 10);
-        Product bottle = new Product(101, "bottle", 105, 1);
-        Product box = new Product(101, "lunch box", 100, 1);
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
 
+            // using switch statement 
+            switch (choice) {
+                case 1 : {
+                    System.out.print("Enter store name: ");
+                    String storeName = sc.nextLine();
+                    sc.nextLine();
+                    System.out.print("Enter store location: ");
+                    String storeLocation = sc.nextLine();
 
-        // here i adding them to the store.
-        store.addProduct(note);
-        store.addProduct(pen);
-        store.addProduct(bottle);
-        store.addProduct(box);
+                    Store.setStoreDetails(storeName, storeLocation);
+                    break;
+                }
 
-        // here i displaey about the store details
-        store.displayStoreDetails();
+                case 2 : {
+                    System.out.print("Enter product ID: ");
+                    int id = sc.nextInt();
+                    sc.nextLine();
 
-        // here i diplayed about the product information
-        store.displayAllProducts();
+                    System.out.print("Enter product name: ");
+                    String name = sc.nextLine();
+
+                    System.out.print("Enter product price: ");
+                    float price = sc.nextFloat();
+
+                    System.out.print("Enter product quantity: ");
+                    int quantity = sc.nextInt();
+
+                    Product product = new Product(id, name, price, quantity);
+                    store.addProduct(product);
+                    break;
+
+                }
+
+                case 3 :{
+                    store.displayStoreDetails();
+                    break;
+                }
+
+                case 4 :{
+                    store.displayAllProducts();
+                    break;
+                }
+
+                case 0 :{
+                    System.out.println("Exiting...");
+                    System.exit(0);
+                } 
+
+                default : System.out.println("Invalid choice! Please try again.");
+            }
+
+        } while (choice != 0);
+
+        sc.close();
     }
 }
 
@@ -74,6 +120,17 @@ class Store{
 
     // this method will add product in the list
     public void addProduct(Product product){
+            boolean found = false;
+            for(Product p : products){
+                if(p.getId()==product.getId()){
+                    int q = p.getQuantity();
+                    p.setQuantity(q+(product.getQuantity()));
+                    found = true;
+                    break;
+                }
+            }
+        
+        if(!found)
         products.add(product);
     }
 
@@ -113,10 +170,24 @@ class Product{
     }
 
     // here this method will display the product details 
-    public void displayProduct(){
-        System.out.println(
-            "Product : \n"+"id : "+this.id+" name : "+this.name+" quantity : "+this.quantity+" price : "+this.price
-        );
+   public void displayProduct() {
+    System.out.printf("| %-6d | %-15s | %8.2f | %8d |\n", id, name, price, quantity);
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getQuantity() {
+        return this.quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
 }
