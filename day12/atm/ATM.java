@@ -47,7 +47,7 @@ public class ATM {
             wait();
         }
         Thread.sleep(500);
-        System.out.println("Printing Receipt... ✅");
+        System.out.println("Printing Receipt...");
         System.out.println("Thank you for using our ATM!");
     }
 }
