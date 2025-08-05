@@ -1,0 +1,41 @@
+# Java build files
+*.class
+*.jar
+*.war
+*.ear
+
+# Eclipse project files (IDE settings)
+*.iml
+*.iws
+.project
+.classpath
+.settings/
+
+# IntelliJ / VSCode
+.idea/
+.vscode/
+
+# Build directories
+bin/
+out/
+build/
+target/
+
+# Mac OS and Windows
+.DS_Store
+Thumbs.db
+
+# Eclipse workspace metadata (DO NOT TRACK THIS!)
+.metadata/
+
+# Log files
+*.log
+
+# Any personal output
+*.ser
+*.zip
+*.log.old
+*.db
+*.dat
+*.xml
+*.prefs
