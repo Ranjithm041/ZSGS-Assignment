@@ -1,3 +1,8 @@
+/*
+4. Design a Java Ticket Booking System using polymorphism where
+ Bus, Train, and Flight tickets share a common method but implement booking differently.
+ */
+
 package com.day5.ticketbooking;
 import java.util.Scanner;
 public class TicketBooking {

@@ -1,3 +1,6 @@
+/*
+ 4. Get some strings through the command-line prompt and use an array to store and display them.
+ */
 package com.day8.commandlineargs;
 
 public class CommandLine {

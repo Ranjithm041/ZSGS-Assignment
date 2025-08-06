@@ -11,9 +11,9 @@ public class Family {
 	public Family() {
 		System.out.println("Family constructor ");
 	}
-	public Family() {
-		System.out.println("Overidden Family constructor ");
-	}
+//	public Family() {
+//		System.out.println("Overidden Family constructor ");
+//	}
 	private void privateMethod() {
 		System.out.println("Family private method");
 	}
@@ -25,16 +25,16 @@ public class Family {
 	}
 }
 class Father extends Family{
-	@Override
-	private void priavteMethod() {
-		System.out.println("Father ovveriden method from Family");
-	}
-	@Override
-	public static void staticOverride() {
-		System.out.println("Static method from Father ");
-	}
-	@Override
-	public void finalMethod() {
-		System.out.println("final method from Father");
-	}
+//	@Override
+//	private void priavteMethod() {
+//		System.out.println("Father ovveriden method from Family");
+//	}
+//	@Override
+//	public static void staticOverride() {
+//		System.out.println("Static method from Father ");
+//	}
+//	@Override
+//	public void finalMethod() {
+//		System.out.println("final method from Father");
+//	}
 }

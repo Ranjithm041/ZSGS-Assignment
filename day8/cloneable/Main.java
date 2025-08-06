@@ -17,7 +17,7 @@ public class Main {
 		StudentWithoutClone student1= new StudentWithoutClone("Ranjith", 123, "CSE");
 		
 		try {
-			StudentWithoutClone student2= (StudentWithoutClone) student1.clone();
+//			StudentWithoutClone student2= (StudentWithoutClone) student1.clone();
 			System.out.println("cloned");
 		}catch (Exception e) {
             System.out.println("Error: " + e.getMessage());

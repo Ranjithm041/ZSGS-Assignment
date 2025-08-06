@@ -4,7 +4,7 @@ public class Family {
     public static void main(String[] args) {
         Father f = new Father();
         Mother m = new Mother();
-        Son s = new Son(); 
+      //  Son s = new Son(); 
     }
 }
 
@@ -21,9 +21,12 @@ class Mother {
 }
 
 //multiple inheritance not allowed using classes
+/*
 class Son extends Father, Mother {
     Son() {
         System.out.println("Son class");
     }
 }
+
+ */
 

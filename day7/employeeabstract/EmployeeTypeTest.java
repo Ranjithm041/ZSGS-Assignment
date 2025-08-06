@@ -1,3 +1,8 @@
+/*
+ 3. Create a Java application to manage employees in a company. Define an abstract class Employee with a method calculateSalary().
+ Then create two subclasses FullTimeEmployee and PartTimeEmployee that override calculateSalary() method based on their working type. 
+ Demonstrate runtime polymorphism by calling calculateSalary() on different types of employees using the Employee reference.
+ */
 package com.day7.employeeabstract;
 import java.util.Scanner;
 public class EmployeeTypeTest {

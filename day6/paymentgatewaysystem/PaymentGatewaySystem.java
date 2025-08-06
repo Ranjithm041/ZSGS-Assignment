@@ -1,3 +1,10 @@
+/*
+ 1. Illustrate the concept-Encapsulation with the Payment Gateway System.
+[The class should encapsulate private data members such as 
+transaction ID, and transaction status.
+ Provide appropriate public getter and setter methods to access and modify these details securely.
+  Also include a method to display the transaction summary.]
+ */
 package com.day6.paymentgatewaysystem;
 
 import java.util.*;

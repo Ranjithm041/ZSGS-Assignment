@@ -78,10 +78,9 @@ public class Main {
 	public static void readWriteIntoCSV(Path file, Path sheet) {
 		   try {
 		        List<String> lines = Files.readAllLines(file, StandardCharsets.UTF_8);
-
 		        // Add header
 		        List<String> csvContent = new ArrayList<>();
-		        csvContent.add("ProductID,ProductName,Price");
+		        csvContent.add("ProductName");
 
 		        // Add content lines
 		        for (String line : lines) {

@@ -18,7 +18,8 @@ Include all the necessary classes if its needed.
 2. Can we override private method, constructor, static method, final method? Illustrate with an example.
 ‌
 3. Create a Java application to manage employees in a company. Define a base class Employee with a method calculateSalary().
- Then create two subclasses FullTimeEmployee and PartTimeEmployee that override calculateSalary() method based on their working type.
+ Then create two subclasses FullTimeEmployee and PartTimeEmployee that override calculateSalary() method based
+  on their working type.
 ‌
 4. Design a Java Ticket Booking System using polymorphism where
  Bus, Train, and Flight tickets share a common method but implement booking differently.

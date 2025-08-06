@@ -102,6 +102,7 @@ public class BankSystem {
 			default -> System.out.println("Invalid choice !");
 			}
 		}while(choice!=0);
+		sc.close();
 	}
 	public static boolean isExists(ArrayList<Account> accounts , int accountNumber) {
 		for(Account acc : accounts) {
