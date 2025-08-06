@@ -7,7 +7,7 @@ public class Main {
 
 	        Thread pinThread = new Thread(() -> {
 	            try {
-	                atm.verifyPin(1234); // Change to wrong pin like 9999 to test
+	                atm.verifyPin(1234); 
 	            } catch (InterruptedException e) {
 	                e.printStackTrace();
 	            }
